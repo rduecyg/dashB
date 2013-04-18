@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>CE Dashboard</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <link rel="stylesheet" href="css/dashboard.css" />
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+<![endif]-->
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="large-12 columns" style="background:#33557C;">
+			<div>
+				<h2 class="dashboard-title">South Bend Code Enforcement</h2>
+			</div>
+		</div>
+	</div>
+
+  <div class="row">
+    <div class="large-12 columns" style="background:#33557C;">
+      <div>
+        <p class="dashboard-navigation"><a href="dashboard.html" class="small button dashboard-navigation">Dashboard</a><a href="property_map.html" class="small button dashboard-navigation">Property Map</a></p>
+      </div>
+    </div>
+  </div>
+
+	<div class="row">
+		<div class="large-12 columns">
+
+			<div class="row">
+				<div class="large-12 columns" style="background:#4D6B8C;">
+					<h3 class="dashboard-title">Overview</h3>
+				
+			<div class="row">
+				<div class="large-3 columns">
+          <div class="panel radius text-center">
+            <p>All Cases Open<h1>574</h1> &uarr; 16%</p>
+          </div>
+          <div class="panel radius text-center" style="height:185px">
+            <p>Fees Outstanding <h3>$341,012</h3> &uarr; 9%</p>
+          </div>
+				</div>
+				<div class="large-9 columns">		
+						<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto; padding-bottom:1.25em;"></div>				
+				</div>
+			</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-12 columns" style="background:#66809D;">
+
+          <div class="row">
+            <div class="large-12 columns" style="margin-top:.75em; margin-bottom:0em;">
+
+              <h3>
+                <div class="large-3 columns" style="padding-left:0em;">
+                  <form class="custom large" style="width:7.5em;">
+                    <select id="customDropdown">
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </select>
+                  </form>
+                </div>
+              </h3>
+              <h3 class="dashboard-title" style:"padding-left:50px display:inline;">
+                  Report
+              </h3>
+
+            </div>
+          </div>
+
+                <!-- dropdown for case type
+                <div class="large-4 columns" style="margin-top:0.75em;">
+                  <form class="custom small">
+                    <select id="customDropdown">
+                      <option>Grass</option>
+                      <option>Weeds, Vacant Lot</option>
+                      <option>Appliances</option>
+                      <option>Litter</option>
+                      <option>Fallen/Cut Limbs</option>
+                      <option>Graffiti</option>
+                      <option>Wood/Lumber</option>
+                      <option>Traffic Obstruction</option>
+                    </select>
+                  </form>
+                </div>
+                -->
+                
+                
+            
+             
+           
+				
+					<div class="row">
+				    <div class="large-3 columns">
+              <div class="panel radius">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Summary</a></th>
+                      <td style="background:#85E085;">B</th>
+                    </tr>
+                    <tr>
+                      <td style="background:#CCCCCC; color:#007ACC; font-weight:bold;"><a href="#">Grass</td>
+                      <td style="background:#33CC33;">A</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Weeds, Vacant Lot</td>
+                      <td style="background:#85E085;">B</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Appliances</td>
+                      <td style="background:#FFA8A8;">D</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Litter</td>
+                      <td style="background:#FF5050;">F</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Fallen/Cut Limbs</td>
+                      <td style="background:#FFFF80;">C</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Fallen/Cut Limbs</td>
+                      <td style="background:#85E085;">B</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Graffiti</td>
+                      <td style="background:#85E085;">B</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+				    </div>
+				    <div class="large-3 columns text-center">
+					   <div class="panel radius">
+						  <p style="">Opened Cases<h2>214</h2> &uarr; 19%</p>
+					   </div>
+				    </div>
+				    <div class="large-3 columns text-center">
+					   <div class="panel radius">
+						  <p>Inspections <h2>180</h2> &uarr; 12%</p>
+					   </div>
+				    </div>
+				    <div class="large-3 columns text-center">
+					   <div class="panel radius">
+						  <p style="">Closed Cases<h2>168</h2> &darr; 10%</p>
+					   </div>
+				    </div>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+
+<ul id="drop1" class="f-dropdown">
+  <li><a href="#">January</a></li>
+  <li><a href="#">February</a></li>
+  <li><a href="#">March</a></li>
+</ul>
+<ul id="drop2" class="f-dropdown">
+  <li><a href="#">Summary</a></li>
+  <li><a href="#">Grass</a></li>
+  <li><a href="#">Weeds</a></li>
+</ul>
+           
+
+
+<!-- Foundation4 js-->
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+
+<!-- .js to get the Foundation4 dropdowns working-->
+    <script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      document.write('<script src="http://foundation.zurb.com/docs/assets/vendor/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js"><\/script>');
+    </script>
+    <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
+    <script>
+      $(document)
+        .foundation();
+    </script>
+
+<!-- HighCharts js-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="js/highcharts.js"></script>
+  <script src="js/modules/exporting.js"></script>
+  <script type="text/javascript">
+    $(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'area'
+            },
+            title: {
+                text: 'Total Cases over Time by Type'
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['Nov.', 'Dec.', 'Jan.', 'Feb.', 'Mar.', 'Apr.', 'May'],
+                tickmarkPlacement: 'on',
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Violations'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value ;
+                    }
+                }
+            },
+            tooltip: {
+                shared: true,
+                valueSuffix: ''
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'normal',
+                    lineColor: '#666666',
+                    lineWidth: 1,
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#666666'
+                    }
+                }
+            },
+            series: [{
+                name: 'Grass',
+                data: [502, 635, 809, 947, 1402, 3634, 5268]
+            }, {
+                name: 'Weeds, Vacant Lot',
+                data: [106, 107, 111, 133, 221, 767, 1766]
+            }, {
+                name: 'Appliances',
+                data: [163, 203, 276, 408, 547, 729, 628]
+            }, {
+                name: 'Litter',
+                data: [18, 31, 54, 156, 339, 818, 1201]
+            }, {
+                name: 'Fallen/Cut Limbs',
+                data: [2, 2, 2, 6, 13, 30, 46]
+            }, {
+                name: 'Graffiti',
+                data: [18, 31, 54, 156, 339, 818, 1201]
+            }, {
+                name: 'Wood/Lumber',
+                data: [18, 31, 54, 156, 339, 818, 1201]
+            }, {
+                name: 'Traffic Obstruction.',
+                data: [18, 31, 54, 156, 339, 818, 1201]
+            },]
+        });
+    });
+
+    </script>
+
+</body>
+</html>

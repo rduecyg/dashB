@@ -1,0 +1,30 @@
+
+.dashboard-title {
+	color:white;
+}
+.panel-title{
+	color: white;
+}
+.dashboard-button {
+	background-color:blue; 
+	height:50px; 
+	padding-left:1em; 
+	width:50px
+}
+.dashboard-header {
+	background:#33557C;
+}
+.dashboard-navigation {
+	margin:0em;
+	margin-bottom:0em;
+}
+.dashboard-overview {
+	background:#4D6B8C
+}
+.dashboard-month {
+	background:#66809D
+}
+
+
+
+
