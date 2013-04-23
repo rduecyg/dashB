@@ -51,10 +51,10 @@
 			<div class="row">
 				<div class="large-3 columns">
           <div class="panel radius text-center">
-            <p>All Cases Open<h1>574</h1> &uarr; 16%</p>
+            <p>Closed in 30 Days<h1 class="dashB-okay dashB-prcnt-chg">76%</h1> <span class="dashB-footnote">Cases past 12 months</span></p>
           </div>
           <div class="panel radius text-center" style="height:185px">
-            <p>Fees Outstanding <h3>$341,012</h3> &uarr; 9%</p>
+            <p>Fees Outstanding '12<h3>$765,772</h3> <span class="dashB-worst dashB-prcnt-chg">95% un-collected</span></p>
           </div>
 				</div>
 				<div class="large-9 columns">		
@@ -125,35 +125,35 @@
                   <tbody>
                     <tr>
                       <td><a href="#">Summary</a></th>
-                      <td style="background:#85E085;">B</th>
+                      <td class="dashB-good">B</th>
                     </tr>
                     <tr>
                       <td style="background:#CCCCCC; color:#007ACC; font-weight:bold;"><a href="#">Grass</td>
-                      <td style="background:#33CC33;">A</td>
+                      <td class="dashB-best">A</td>
                     </tr>
                     <tr>
                       <td><a href="#">Weeds, Vacant Lot</td>
-                      <td style="background:#85E085;">B</td>
+                      <td class="dashB-good">B</td>
                     </tr>
                     <tr>
                       <td><a href="#">Appliances</td>
-                      <td style="background:#FFA8A8;">D</td>
+                      <td class="dashB-bad">D</td>
                     </tr>
                     <tr>
                       <td><a href="#">Litter</td>
-                      <td style="background:#FF5050;">F</td>
+                      <td class="dashB-worst">F</td>
                     </tr>
                     <tr>
                       <td><a href="#">Fallen/Cut Limbs</td>
-                      <td style="background:#FFFF80;">C</td>
+                      <td class="dashB-okay">C</td>
                     </tr>
                     <tr>
                       <td><a href="#">Fallen/Cut Limbs</td>
-                      <td style="background:#85E085;">B</td>
+                      <td class="dashB-good">B</td>
                     </tr>
                     <tr>
                       <td><a href="#">Graffiti</td>
-                      <td style="background:#85E085;">B</td>
+                      <td class="dashB-good">B</td>
                     </tr>
                   </tbody>
                 </table>
@@ -161,17 +161,17 @@
 				    </div>
 				    <div class="large-3 columns text-center">
 					   <div class="panel radius">
-						  <p style="">Opened Cases<h2>214</h2> &uarr; 19%</p>
+						  <p style="">Opened Cases<h2>837</h2> <span class="dashB-good dashB-prcnt-chg">&darr; 19%</span></p>
 					   </div>
 				    </div>
 				    <div class="large-3 columns text-center">
 					   <div class="panel radius">
-						  <p>Inspections <h2>180</h2> &uarr; 12%</p>
+						  <p>Inspections <h2>1621</h2> <span class="dashB-bad dashB-prcnt-chg">&darr; 8%</span></p>
 					   </div>
 				    </div>
 				    <div class="large-3 columns text-center">
 					   <div class="panel radius">
-						  <p style="">Closed Cases<h2>168</h2> &darr; 10%</p>
+						  <p style="">Closed Cases<h2>516</h2> <span class="dashB-good dashB-prcnt-chg">&uarr; 6%</span></p>
 					   </div>
 				    </div>
           </div>
@@ -268,30 +268,39 @@
                 }
             },
             series: [{
-                name: 'Grass',
-                data: [502, 635, 809, 947, 1402, 3634, 5268]
+                name: 'Other',
+                data: [146, 235, 359, 216, 171, 310, 528, 515, 269, 351, 271, 187]
             }, {
                 name: 'Weeds, Vacant Lot',
-                data: [106, 107, 111, 133, 221, 767, 1766]
+                data: [0, 0, 109, 458, 411, 289, 212, 429, 305, 136, 5, 0]
             }, {
                 name: 'Appliances',
-                data: [163, 203, 276, 408, 547, 729, 628]
+                data: [86, 119, 186, 81, 101, 169, 217, 215, 155, 225, 174, 113]
+            }, {
+                name: 'Broken Trash Bags',
+                data: [76, 69, 187, 74, 95, 133, 215, 185, 118, 185, 181, 99]
             }, {
                 name: 'Litter',
-                data: [18, 31, 54, 156, 339, 818, 1201]
+                data: [62, 160, 192, 71, 56, 118, 158, 146, 72, 120, 118, 76]
             }, {
                 name: 'Fallen/Cut Limbs',
-                data: [2, 2, 2, 6, 13, 30, 46]
+                data: [10, 48, 124, 80, 61, 107, 140, 186, 91, 133, 87, 45]
             }, {
                 name: 'Graffiti',
-                data: [18, 31, 54, 156, 339, 818, 1201]
+                data: [57, 189, 92, 38, 46, 70, 77, 65, 20, 19, 40, 41]
             }, {
                 name: 'Wood/Lumber',
-                data: [18, 31, 54, 156, 339, 818, 1201]
+                data: [26, 36, 78, 52, 40, 63, 96, 113, 52, 75, 68, 43]
             }, {
-                name: 'Traffic Obstruction.',
-                data: [18, 31, 54, 156, 339, 818, 1201]
-            },]
+                name: 'Traffic Obstruction',
+                data: [4, 8, 13, 16, 35, 112, 138, 192, 144, 66, 4, 7]
+            }, {
+                name: 'Demo Remains',
+                data: [41, 38, 59, 35, 33, 52, 60, 52, 42, 77, 48, 38]
+            }, {
+                name: 'Grass',
+                data: [2, 0, 195, 1117, 1068, 627, 509, 1081, 674, 226, 9, 1]
+            }, ]
         });
     });
 

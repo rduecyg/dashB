@@ -25,6 +25,40 @@
 	background:#66809D
 }
 
+/* % change indicators */
+.dashB-prcnt-chg{
+	padding-left: .6em;
+	padding-right: .6em;
+	padding-top: .1em;
+	padding-bottom: .1em;
+}
 
+/* ratings colors */
+.dashB-best{
+	background:#33CC33;
+	color:#000000;
+}
+.dashB-good{
+	background:#85E085;
+	color:#000000;
+}
+.dashB-okay{
+	background:#FFFF80;
+	color:#000000;
+}
+.dashB-bad{
+	background:#FFA8A8;
+	color:#000000;
+}
+.dashB-worst{
+	background:#FF5050;
+	color:#000000;
+}
+
+/* foot notes */
+.dashB-footnote{
+	font-size: .8em;
+	color:#707070;
+}
 
 
