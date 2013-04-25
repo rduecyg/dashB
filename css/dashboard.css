@@ -1,10 +1,6 @@
 
-.dashboard-title {
-	color:white;
-}
-.panel-title{
-	color: white;
-}
+
+
 .dashboard-button {
 	background-color:blue; 
 	height:50px; 
@@ -24,6 +20,31 @@
 .dashboard-month {
 	background:#66809D
 }
+.dashB-panel {
+	background:#ffffff;
+	padding:1em;
+}
+
+/* text */
+.dashboard-title {
+	color:white;
+}
+.panel-title{
+	color: white;
+}
+.dashB-lgtext{
+	font-size: 2.5em;
+	font-weight: bold;
+}
+.dashB-medtext{
+	font-size: 2em;
+	font-weight: bold;
+}
+.dashB-smalltext{
+	font-size: .8em;
+	color:#000000;
+}
+
 
 /* % change indicators */
 .dashB-prcnt-chg{
@@ -55,10 +76,7 @@
 	color:#000000;
 }
 
-/* foot notes */
-.dashB-footnote{
-	font-size: .8em;
-	color:#707070;
-}
+
+
 
 
